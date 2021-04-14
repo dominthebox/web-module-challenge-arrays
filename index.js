@@ -182,7 +182,7 @@ function filterByWord(array, string){
     }
     return filteredArray;
 }
-console.log(filterByWord(originalFlavors, "Choclate"));
+console.log(filterByWord(originalFlavors, "Chocolate"));
 
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
@@ -197,8 +197,12 @@ Use the getAverageWordLength function below to do the following:
     For example: getAverageWordLength(originalFlavors) should return a number between 0 and 3.     
 */
 
-function getAverageWordLength(/*code here*/){
-    /*code here*/
+function getAverageWordLength(array){
+    let sum = 0;
+    for(i = 0; i< array.length; i++){
+        sum += array[i].split(' ').length
+    }
+    return sum / array.length;
 }
 
 
